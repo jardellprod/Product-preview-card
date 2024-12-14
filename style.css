@@ -17,8 +17,6 @@
     box-sizing: border-box;
 }
 
-
-
 main {
     display: flex; 
     justify-content: center;
@@ -30,17 +28,12 @@ main {
 .product-card {
    background-color: orange;
    display: flex;
-   height: 50vh;
 }
 
 .card-item {
     width: 50%;
 }
 
-article .hero-image picture img {
-    height: 100%;
-    width: 100%;
-}
 
 .product-description .product-type,
 .product-description .product-overview,
@@ -54,11 +47,16 @@ article .hero-image picture img {
     font-family: var(  --font-Fraunces),  serif;
 }
 
+article .hero-image picture img {
+    height: 100%;
+    width: 100%;
+}
+
 .product-description {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 2rem;
 }
+
 
 .button-container {
     display: flex; 
@@ -67,7 +65,22 @@ article .hero-image picture img {
     width: 100%; 
 }
 
+.button-container button { 
+    width: 90%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.button-container button img {
+    background-color: burlywood;
+}
+
+.button-container button p {
+    background-color: black;
+    color: white;
+}
 
 .product-type,
 .product-name,
@@ -99,7 +112,7 @@ article .hero-image picture img {
 
 .button-container { background-color: rgb(211, 211, 127);}
 
-@media (min-width: 47rem){ /*752px*/
+@media (min-width: 47rem) and (min-height:26rem){ /*752px*/
     body{
         background-color: rgb(255, 0, 0);
     }
@@ -109,7 +122,7 @@ article .hero-image picture img {
     }
 }
 
-@media (min-width: 66rem){/*1056px*/
+@media (min-width: 66rem) and (min-height:26rem) {/*1056px*/
     body{
         background-color: rgb(162, 255, 0);
     }
@@ -119,7 +132,7 @@ article .hero-image picture img {
     }
 }
 
-@media (min-width: 83rem){ /*1328px*/
+@media (min-width: 83rem) and (min-height:26rem){ /*1328px*/
     body{
         background-color: rgb(255, 200, 0);
     }
